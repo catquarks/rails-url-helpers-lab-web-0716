@@ -13,7 +13,7 @@ class StudentsController < ApplicationController
   def activate_student
     @student = self.set_student
     @student.activate
-    @student.save
+    # @student.save
     redirect_to student_path(@student)
   end
 

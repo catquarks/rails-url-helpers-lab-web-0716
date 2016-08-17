@@ -9,6 +9,7 @@ class Student < ActiveRecord::Base
   	else
   		self.active = false
   	end
+  	self.save
   end
 
   def active?
